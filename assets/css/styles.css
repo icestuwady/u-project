@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: 100vh;
+  /*background: url('static/images/bg.jpg');
+  background-size: cover;*/
+}
+.fireworksDiv{
+  position:absolute;
+  width: 100%;
+  height: 100vh;
+  bottom: 0px;
+  z-index:-9;
+}
+#menu{
+  position: fixed;
+  right: 70px;
+  top: 10px;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 2;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #000000;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main h1{
+  padding-top: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 60px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 15s;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
