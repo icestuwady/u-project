@@ -42,8 +42,16 @@
                     <li>
                         <a href="show-All.php"> <i class="menu-icon ti-desktop"></i>All</a>
                     </li>
-                    <li>
-                        <a href="show-Picking.php"> <i class="menu-icon ti-package"></i>Picking</a>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-package"></i>Picking</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-angle-right"></i><a href="show-Picking.php"> All Picking</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="show-PickingA.php"> Picking A</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="show-PickingB.php"> Picking B</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="show-PickingC.php"> Picking C</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="show-PickingD.php"> Picking D</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="show-PickingE.php"> Picking E</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="show-BenchCheck.php"> <i class="menu-icon ti-check-box"></i>BenchCheck</a>
