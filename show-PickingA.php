@@ -40,7 +40,7 @@
   <!-- end navbar -->
 
   <div id="main">
-    <h1>Individual Productivity Picking A</h1>
+    <h1>Individual Productivity Picking A Hello</h1>
   </div>
 
   <!-- show card -->
