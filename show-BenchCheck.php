@@ -49,7 +49,7 @@
         <!-- card green -->
         <?php
           $conn = mysqli_connect("localhost","root","","project_pi");
-          $result = mysqli_query($conn,"SELECT * FROM `employee` WHERE zones = 'BenchCheck' AND error_target < 2 AND product >= targets;");
+          $result = mysqli_query($conn,"SELECT * FROM `employee` WHERE lower(zones) LIKE 'bench%' AND error_target < 2 AND product >= targets;");
           $num = mysqli_num_rows($result);
           $i = 0;
         ?>
@@ -114,7 +114,7 @@
         <!-- card yellow,red -->
         <?php
           $conn = mysqli_connect("localhost","root","","project_pi");
-          $result = mysqli_query($conn,"SELECT * FROM `employee` WHERE zones = 'BenchCheck' EXCEPT SELECT * FROM `employee`  WHERE error_target < 2 AND product >= targets;");
+          $result = mysqli_query($conn,"SELECT * FROM `employee` WHERE lower(zones) LIKE 'bench%' EXCEPT SELECT * FROM `employee`  WHERE error_target < 2 AND product >= targets;");
           $num = mysqli_num_rows($result);
           $i = 0;
         ?>
